@@ -18,6 +18,7 @@ const VerifyCode = () => {
       let res = await axios.post('https:chatbotbackend-2-p6w5.onrender.com/verify', { code: verificationCode });
       setResponseMessage(res.data.message); // Set server response
     } catch (error) {
+      
       setResponseMessage('An error occurred. Please try again.');
     } finally {
       setLoading(false); // Hide spinner
