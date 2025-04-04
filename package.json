@@ -62,7 +62,7 @@
     "workbox-webpack-plugin": "^6.4.1"
   },
   "scripts": {
-    "clean": "rm -rf node_modules && npm install"
+    "clean": "rm -rf node_modules && npm install",
 
     "start": "node_modules/react-scripts/scripts/start.js",
     "build": "node_modules/react-scripts/scripts/build.js",
