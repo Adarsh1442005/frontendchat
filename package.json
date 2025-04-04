@@ -62,9 +62,9 @@
     "workbox-webpack-plugin": "^6.4.1"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
+    "start": "node start.js",
+    "build": "node build.js",
+    "test": "node test.js",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
