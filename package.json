@@ -64,9 +64,9 @@
   "scripts": {
     "clean": "rm -rf node_modules && npm install",
 
-    "start": "node start.js",
-    "build": "node build.js",
-    "test": "node test.js",
+    "start": "react-scripts start",
+    "build": "react-script build",
+    "test": "react-script test",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
