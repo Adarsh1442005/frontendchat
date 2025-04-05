@@ -26,7 +26,7 @@ const Signup = () => {
     setIsLoading(true);
 
     try {
-      const response = await axios.post('https://chatbotbackend-2-p6w5.onrender.com/api/createaccount', formData);
+      const response = await axios.post('https://chatbotbackend-vd8a.onrender.com/api/createaccount', formData);
 
       if (response.data.code === 1) {
         // Redirect to verification code page
