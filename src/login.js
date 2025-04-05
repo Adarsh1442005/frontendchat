@@ -22,7 +22,7 @@ export default function Login() {
     setIsLoading(true); // Start spinner
     setMessage(""); // Clear previous messages
     try {
-      const res = await axios.post('https://chatbotbackend-2-p6w5.onrender.com/login', formdata);
+      const res = await axios.post('https://chatbotbackend-vd8a.onrender.com/login', formdata);
       if (res.data.code === 1) {
         console.log("Logged in successfully");
         localStorage.setItem('token',formdata.email); // Store the JWT token
