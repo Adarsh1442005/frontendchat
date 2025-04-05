@@ -15,7 +15,7 @@ const VerifyCode = () => {
     setLoading(true); // Show spinner
     setResponseMessage(''); // Clear any previous response
     try {
-      let res = await axios.post('https:chatbotbackend-2-p6w5.onrender.com/verify', { code: verificationCode });
+      let res = await axios.post('https://chatbotbackend-vd8a.onrender.com/verify', { code: verificationCode });
       setResponseMessage(res.data.message); // Set server response
     } catch (error) {
       
