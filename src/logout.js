@@ -14,7 +14,7 @@ export default function Logout() {
       setLoading(true); // Show spinner while waiting for response
       try {
         // Send the email to the backend for logout processing
-        const res = await axios.post('https://chatbotbackend-2-p6w5.onrender.com/logout', { email });
+        const res = await axios.post('https://chatbotbackend-vd8a.onrender.com/logout', { email });
 
         if (res.data.code === 1) { // Example response code check
           localStorage.removeItem("token"); // Clear JWT token from localStorage
