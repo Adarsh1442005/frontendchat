@@ -55,7 +55,7 @@ const Chatbot = () => {
     setLoading(true);
 
     try {
-      const response = await axios.post('https://chatbotbackend-2-p6w5.onrender.com/api/chat', {
+      const response = await axios.post('https://chatbotbackend-vd8a.onrender.com/chat', {
         message: input,
         sessionId: sessionId, // Include session ID in the request
       });
