@@ -85,7 +85,7 @@ const Chatbot = () => {
           Start New Conversation
         </button>
             <button
-          onClick={navigate('/')} // Clear messages for a new chat
+          onClick={()=> navigate("/")} // Clear messages for a new chat
           className="p-2 bg-red-500 hover:bg-red-600 rounded-md text-white font-semibold mb-4"
         >
           Go to Homepage
