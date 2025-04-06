@@ -8,6 +8,7 @@ const Chatbot = () => {
   const [messages, setMessages] = useState([]);
   const [loading, setLoading] = useState(false);
   const [sessionId, setSessionId] = useState(null);
+   const navigate = useNavigate();
 
   // Ensure the session ID persists
   useEffect(() => {
@@ -84,10 +85,10 @@ const Chatbot = () => {
           Start New Conversation
         </button>
             <button
-          onClick={navigate("/")} // Clear messages for a new chat
+          onClick={navigate('/')} // Clear messages for a new chat
           className="p-2 bg-red-500 hover:bg-red-600 rounded-md text-white font-semibold mb-4"
         >
-          Start New Conversation
+          Go to Homepage
         </button>
         <ul className="space-y-2">
           {messages.map((msg, index) => (
