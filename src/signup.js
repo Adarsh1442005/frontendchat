@@ -81,6 +81,7 @@ const Signup = () => {
             >
               Create Account
             </button>
+            <Link to="/" className="text-blue-500"> Home</Link>    
           </form>
         )}
       </div>
