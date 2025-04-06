@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { v4 as uuidv4 } from 'uuid';
+import { useNavigate } from 'react-router-dom';
 
 const Chatbot = () => {
   const [input, setInput] = useState('');
@@ -78,6 +79,12 @@ const Chatbot = () => {
         <h2 className="text-lg font-bold mb-3">Chat History</h2>
         <button
           onClick={() => setMessages([])} // Clear messages for a new chat
+          className="p-2 bg-red-500 hover:bg-red-600 rounded-md text-white font-semibold mb-4"
+        >
+          Start New Conversation
+        </button>
+            <button
+          onClick={navigate("/")} // Clear messages for a new chat
           className="p-2 bg-red-500 hover:bg-red-600 rounded-md text-white font-semibold mb-4"
         >
           Start New Conversation
