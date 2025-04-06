@@ -47,7 +47,7 @@ const VerifyCode = () => {
           >
             {loading ? 'Verifying...' : 'Verify Code'}
           </button>
-  <h1><Link to="/chatbot" className="text-blue-500">click for Logging </Link></h1>
+  <h1><Link to="/login" className="text-blue-500">click for Logging </Link></h1>
         </form>
 
         {/* Spinner */}
