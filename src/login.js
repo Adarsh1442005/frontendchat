@@ -94,6 +94,7 @@ export default function Login() {
         )}
         <p className="text-gray-400 text-center mt-4">
           Don't have an account? <Link to="/signup" className="text-blue-500 hover:underline">Sign up</Link>
+          <Link to="/chatbot" className="text-pink-500 hover:underline">after Logging visit chatboot</Link>
         </p>
       </div>
     </div>
