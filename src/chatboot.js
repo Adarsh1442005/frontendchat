@@ -1,14 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { v4 as uuidv4 } from 'uuid';
-import { useNavigate } from 'react-router-dom';
 
 const Chatbot = () => {
   const [input, setInput] = useState('');
   const [messages, setMessages] = useState([]);
   const [loading, setLoading] = useState(false);
   const [sessionId, setSessionId] = useState(null);
-   const navigate = useNavigate();
 
   // Ensure the session ID persists
   useEffect(() => {
@@ -61,6 +59,7 @@ const Chatbot = () => {
         message: input,
         sessionId: sessionId, // Include session ID in the request
       });
+      console.log(response);
 
       const botMessage = { text: response.data.reply, sender: 'bot' };
       setMessages((prevMessages) => [...prevMessages, botMessage]); // Add bot reply to chat
@@ -83,12 +82,6 @@ const Chatbot = () => {
           className="p-2 bg-red-500 hover:bg-red-600 rounded-md text-white font-semibold mb-4"
         >
           Start New Conversation
-        </button>
-            <button
-          onClick={()=> navigate("/")} // Clear messages for a new chat
-          className="p-2 bg-red-500 hover:bg-red-600 rounded-md text-white font-semibold mb-4"
-        >
-          Go to Homepage
         </button>
         <ul className="space-y-2">
           {messages.map((msg, index) => (
@@ -148,3 +141,11 @@ const Chatbot = () => {
 };
 
 export default Chatbot;
+  // Ensure the sessi
+  
+    
+      
+    
+    
+            
+        
