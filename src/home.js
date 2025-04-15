@@ -11,9 +11,7 @@ const HomePage = () => {
           Your personal AI assistant is here to help! Navigate through the links below to explore
           more and start chatting with your virtual assistant.
         </p>
-        <p className="text-lg text-yellow-400 font-semibold mt-4">
-          Note: Our chatbot specializes in discussions about healthcare and fitness only.
-        </p>
+        
       </header>
 
       {/* Links Section */}
