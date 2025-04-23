@@ -45,7 +45,7 @@ const Signup = () => {
   return (
     <div className="relative min-h-screen bg-gradient-to-b from-black via-gray-900 to-black flex items-center justify-center p-5">
       <div className="relative z-10 bg-gray-800 text-white p-10 rounded-lg shadow-lg">
-        <h2 className="text-2xl font-bold mb-6 text-center">Create Your Account</h2>
+        <h2 className="text-2xl font-bold mb-6 text-center">Creating your Account please wait</h2>
         {!isLoading && check === 3 && (
           <form onSubmit={handleSubmit} className="space-y-4">
             <input
